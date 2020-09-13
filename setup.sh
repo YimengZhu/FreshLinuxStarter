@@ -19,6 +19,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 mv .zshrc ~/.zshrc
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	brew install vim
+
+
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim 
 mv .vimrc ~/.vimrc
 
